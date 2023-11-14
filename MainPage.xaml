@@ -1,0 +1,14 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RelojAppDani"
+             x:Class="RelojAppDani.MainPage">
+    <ContentPage.BindingContext>
+        <local:ClockViewModel />
+    </ContentPage.BindingContext>
+
+    <Label Text="{Binding FechaHora, StringFormat='{0:T}'}"
+           FontSize="40"
+           HorizontalOptions="Center"
+           VerticalOptions="Center" />
+
+</ContentPage>
